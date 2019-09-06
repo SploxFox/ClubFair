@@ -1,0 +1,42 @@
+Okay, so being able to create values and store them in the heap is pretty nice, but we have no way of actually referencing those variables yet.#
+We don't have a way to tell the computer, for example, that we want to add 5 to that 4 we created earlier.#
+So, we're going to create that 4 with a name now.#
+The name is completely arbitrary and can be anything we like (as long as it has no spaces).#
+The names are stored in their own separate place called a <em>scope</em>.#
+Unlike the heap, which there is only one, there can be many different scopes.#
+We'll learn about different scopes later, but for now we're just going to be working with one scope.#
+There cannot be two of the same name in the same scope.#
+A name paired with a value is called a <em>variable</em>.#
+The first time you create a name is called <em>declaration</em>.#
+The first time you give that name a value is called <em>initialization</em>.#
+When first declaring a variable, we need to start off with a keyword to tell the computer what we're about to do.#
+For this example, we'll use <code>let</code>. Here's how we'd declare the variable: <code>let ourNumber = 4;</code>.#
+Let's dissect this statement.#
+First, we start out with the word "let". This tells the computer that we're about to declare a new variable. Now it's expecting the next word to be the variable name.#
+It reads the text "ourNumber" and adds it to the current scope. ourNumber has now been declared.#
+It then sees the equals sign and finally the <code>4</code>. It creates the 4 in the heap and initializes ourNumber to 4.#
+Now, when we use ourNumber later in our code, the computer will think of that specific 4 in the heap.#
+So, let's use ourNumber now that it's been created!#
+Since we've already defined "ourNumber" in the current scope, we don't have to use "let" again.#
+To do that +5 operation that we wanted to do before, we just have to say: <code>ourNumber = ourNumber + 5;</code>#
+Let's dissect this line now.#
+First, the computer sees <code>ourNumber =</code> and immediately knows that we're going to be changing that 4 that's in the heap.#
+It then sees <code>ourNumber + 5</code> and takes the value of ourNumber (which is 4) and adds it together with 5, creating 9.#
+It then sets this value in the heap to 9.#
+Which is ONLY a variable declaration for a new variable named "foo"?
+$$branchChoices({
+    "choices":[
+        {
+            "text": "<code>let foo = \"bar\"<code>",
+            "destination": "variables"
+        },
+        {
+            "text": "<code>let foo</code>",
+            "destination": "finish"
+        },
+        {
+            "text": "<code>foo</code>",
+            "destination":"variables"
+        }
+    ]
+});#

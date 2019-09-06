@@ -1,0 +1,31 @@
+The <em>heap</em> is where all of our things that we'll be working with are stored.#
+Everything is in the heap; it's kind of like a section of the computer's brain dedicated entirely to your program.#
+So, if we just put <code>4</code> in our code and press "run", we should see that <code>4</code> gets added to the heap.#
+In most languages, the computer is actually pretty smart and will realize that we're not doing anything will this 4 so it'll delete it nearly immediately in a process called <em>garbage collection</em>.#
+Garbage collection is a process where something called a garbage collector will search through our heap and delete anything that we're not doing anything with.#
+The garbage collector is so smart, in fact, that it'll look through the current state of your program to make sure you're using this 4 nowhere and will never use this 4 in the future.#
+The garbage collector will never delete a value that you're using or going to use.#
+It basically follows you around, cleaning up your garbage that you're done with.#
+This way, we don't waste the computer's resources on nothing.#
+So--we've learned that by simply typing a <code>4</code> anywhere in our code will create a 4 in the computer's mind.#
+Then, the computer will see that this 4 is needed for no reason so it'll remove it from the heap.#
+But we want to store more than numbers.#
+For text, we use quotes around it so the computer knows to interpret it as a value and not as code. This data type is called a <em>string</em>.#
+If we wanted to create a string, we'd do something like this: <code>"foo"</code>.#
+What does the garbage collector automatically delete?
+$$branchChoices({
+    "choices": [
+        {
+        "text":"Things in the heap that are no longer in use and will never be used.",
+        "destination":"variables"
+        },
+        {
+        "text":"Things in the heap that are being used.",
+        "destination":"heap"
+        },
+        {
+        "text":"Things in the heap that the program needs.",
+        "destination":"heap"
+        }
+    ]
+});#

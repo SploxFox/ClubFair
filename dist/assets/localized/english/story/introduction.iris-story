@@ -1,0 +1,14 @@
+Hello!#
+This is just a little demo for the programming club.#
+Here, we're going to introduce some basic topics in computer science so that you can decide if coding is something that you'd be interested in.#
+First of all, we should discuss what most time spent programming is spent actually doing: solving problems.#
+If you decide to program, most of your time spent will be devoted to solving problems in your code.#
+It's somewhat similar to solving logic problems, so if you like those you might like programming.#
+We're going to be looking at this from a JavaScript perspective, but many of the topics covered will be applicable to many different languages.#
+To make sure you're following along and have rightfully earned your reward candy, there will be a few comprehension questions throughout.#
+If you answer one incorrectly, you will have to read over the section again.#
+Anyways, let's get started on the very basics of programming!#
+So, the most basic thing is that whenever you complete a statement, you'll want to add on a semicolon at the end and then press enter.#
+$$jump({
+    "destination":"heap"
+});#
